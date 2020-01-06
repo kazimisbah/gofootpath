@@ -1,0 +1,56 @@
+<html>
+<head>
+        
+</head>
+
+<body>
+
+  <div class="containera">
+    <img src="assets/images/buyp.jpg" alt="Nature" style="width:100%;height:auto">
+    <div class="text-block">
+      <h1 style="margin-left: 2em;margin-bottom:1em;font-size: 3em;font-family:Arial"><b>Camping Products</b></h1>
+    </div>
+  </div>
+  <BR>
+  <div class="container">
+    <hr>
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb" style="background-color:white;">
+      <li class="breadcrumb-item"><a href="#">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Sign in</li>
+    </ol>
+  </nav>
+  <hr>
+
+ <br>
+        <div class="row">
+        
+            
+              <div (click)="buyprod(p.id)" class="col-md-3" *ngFor="let p of saman; let i =index"  >
+            <div class="card" style="width: 14em;border-color:white">
+              <img class="card-img-top" src="{{p.img}}" style="height: 15em" alt="new_product">
+              <div class="card-body">
+                <h5 class="card-title center" style="color: #958b8b;font-size: 15px;text-align: center">{{p.name}}</h5>
+               
+                <p class="card-text" style="color: #95d600;text-align: center;font-size: 26px"><b>${{ p.price}}</b></p>
+
+              </div>
+            </div>
+          </div>
+        
+        
+          
+          
+          
+          
+
+          
+        </div>
+      </div>
+
+<!-- Footer -->
+
+</body>
+</html>
+
+

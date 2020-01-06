@@ -1,0 +1,85 @@
+<html>
+<head>
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+   
+<title>Gofootpath - </title>
+</head>
+
+
+<body>
+    <ul class="nav justify-content-center" style="background-color:#00783e">
+        <li class="nav-item">
+          <a class="nav-link " href="#"><font size="4px" color="99d423">FREE SHIPPING</font><font  color="white"> <b> for all order above $50</b></font></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link " href="#"><font size="4px" color="99d423">Anywhere</font><font  color="white"> <b> in Ireland</b></font></a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link " href="#"><font size="4px" color="99d423">Any</font><font  color="white"> <b> Size or Weight</b></font></a>
+            </li>
+        
+      
+      </ul>
+   
+      <nav class="navbar navbar-expand-lg navbar-light" style="background-color: white;box-shadow: 0px 8px 0px 0px #99d423;">
+          <a class="navbar-brand" routerLink="" >
+              <img src="assets/images/footpath.png" width="200" height="auto" alt="">
+            </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" style="font-size: 25px;color: #00783e;font-family: Arial;" href="#"> </a>
+                  </li>
+              <li class="nav-item active" style="border-left: 1px solid #e5e5e5;margin-top: -.5em;border-right: 1px solid #e5e5e5;
+              width: 15em;height: 5em;text-align: center;
+          ">
+                <a class="nav-link" routerLink="home" style="font-size: 25px;margin-top: 0.7em;color: #00783e;font-family: Arial;">Home <span class="sr-only">(current)</span></a>
+              </li>
+
+              <li class="nav-item active" style="border-left: 1px solid #e5e5e5;margin-top: -.5em;border-right: 1px solid #e5e5e5;
+              width: 15em;height: 5em;text-align: center;
+          ">
+                <a class="nav-link" routerLink="pcategory" style="font-size: 25px;margin-top: 0.7em;color: #00783e;font-family: Arial;">Shop <span class="sr-only">(current)</span></a>
+              </li>
+
+              
+              
+              
+              <li class="nav-item active" style="border-right: 1px solid #e5e5e5;margin-top: -.5em;border-right: 1px solid #e5e5e5;
+              width: 15em;height: 5em;text-align: center; ">
+                  <a class="nav-link"  style="margin-top: 0.7em;font-size: 25px;color: #00783e;font-family: Arial;" routerLink="cart"><i class="fa fa-opencart">Cart</i><button *ngIf="totalcart>0" style="margin-left: 8px;" class="btn btn-warning btn-sm">{{totalcart}}</button>								
+                  </a>
+                </li>
+
+                <li *ngIf="!(isLoggedIn | async)"  class="nav-item active" style="border-right: 1px solid #e5e5e5;margin-top: -.5em;border-right: 1px solid #e5e5e5;
+                width: 15em;height: 5em;text-align: center;">
+                    <a  class="nav-link" routerLink="login" style="margin-top: 0.7em;font-size: 25px;color: #00783e;font-family: Arial;" href="#"><i class="fa fa-lock">Login</i></a>
+
+                  </li>
+                  <li *ngIf="(isLoggedIn | async)"  (click)="logout()" class="nav-item active" style="border-right: 1px solid #e5e5e5;margin-top: -.5em;border-right: 1px solid #e5e5e5;
+                width: 15em;height: 5em;text-align: center;">
+                    <a *ngIf="isLoggedIn" class="nav-link" style="margin-top: 0.7em;font-size: 25px;color: #00783e;font-family: Arial;"><i class="fa fa-user"></i></a>
+
+                  </li>
+              
+             
+            </ul>
+            
+          </div>
+        </nav>
+       
+       <router-outlet></router-outlet>
+      
+
+
+     
+        
+          
+          
+</body>
+</html>

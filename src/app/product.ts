@@ -1,0 +1,60 @@
+export  const pdata=[
+    {
+        "id":1,
+        "products":[{
+"name":"product1",
+"img":"assets/images/category/3.jpg",
+"price":230
+        },
+        {
+            "name":"product1",
+            "img":"assets/images/category/3.jpg",
+            "price":230
+                    },
+                    {
+                        "name":"product1",
+                        "img":"assets/images/category/3.jpg",
+                        "price":230
+                                }
+        ]
+    },
+    {
+        "id":2,
+        "products":[{
+"name":"product1",
+"img":"assets/images/category/3.jpg",
+"price":230
+        },
+        {
+            "name":"product1",
+            "img":"assets/images/category/3.jpg",
+            "price":230
+                    },
+                    {
+                        "name":"product1",
+                        "img":"assets/images/category/3.jpg",
+                        "price":230
+                                }
+        ]
+    },
+
+    {
+        "id":3,
+        "products":[{
+"name":"product1",
+"img":"assets/images/category/3.jpg",
+"price":230
+        },
+        {
+            "name":"product1",
+            "img":"assets/images/category/3.jpg",
+            "price":230
+                    },
+                    {
+                        "name":"product1",
+                        "img":"assets/images/category/3.jpg",
+                        "price":230
+                                }
+        ]
+    }
+]

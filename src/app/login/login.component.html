@@ -1,0 +1,67 @@
+<html>
+<head>
+
+</head>
+<body>
+    <div class="containera">
+        <img src="assets/images/account_bkg.jpg" alt="Nature" style="width:100%;height:auto">
+        <div class="text-block">
+          <h1><b>Sign In</b></h1>
+        </div>
+      </div>
+    
+      
+  <div class="container">
+
+  <div class="col-md-12">
+<br>
+
+      <nav aria-label="breadcrumb">
+          <ol class="breadcrumb" style="background-color:white">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Sign in</li>
+          </ol>
+        </nav>
+<div class="row">
+<div class="col-md-7">
+  <h3 style="color:#007a50">returning customer?</h3>
+  <p style="color:#53565a; font-size: 13px;">Login below if you already have a Great Outdoors online account:    </p>
+<br>
+
+
+    <form #logform="ngForm" (ngSubmit)="login(logform)" >
+      <div class="row">
+      <div class="col-md-4"><div class="form-group">
+          <input type="email" name="email" [(ngModel)]="email"  class="form-control"   placeholder="Email/Mobile" style="height: 3em;font-size: 14px;font-family: Arial;"  id="email">
+</div></div>
+<div class="col-md-4"><div class="form-group">
+    <input type="password" name="password" [(ngModel)]="password"  placeholder="Password"   style="height: 3em;font-size: 14px;font-family: Arial;" class="form-control" id="password">
+</div></div>
+<div class="col-md-4">
+<button type="submit" style="background-color: #007a50;border-color: #007a50;height: 2.5em;
+width: 8em;" class="btn btn-primary">Sign in</button>
+</div>
+</div> 
+         
+    </form>
+    
+</div>
+
+<div class="col-md-5">
+    <h3 style="color:#007a50">new customer?</h3>
+    <p style="color:#53565a;font-size: 13px;">Create a Great Outdoors online account today:
+
+      </p>
+      
+  <br>
+  <a routerLink="/register"><button type="button" style="background-color: #007a50;border-color: #007a50;height: 2.5em;
+width: 11em;" class="btn btn-primary">Register</button></a>
+<router-outlet></router-outlet>
+  
+</div>
+</div>
+   
+  </div>
+</div>
+</body>
+</html>
