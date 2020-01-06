@@ -52,11 +52,11 @@
               
               <li class="nav-item active" style="border-right: 1px solid #e5e5e5;margin-top: -.5em;border-right: 1px solid #e5e5e5;
               width: 15em;height: 5em;text-align: center; ">
-                  <a class="nav-link"  style="margin-top: 0.7em;font-size: 25px;color: #00783e;font-family: Arial;" routerLink="cart"><i class="fa fa-opencart">Cart</i><button *ngIf="totalcart>0" style="margin-left: 8px;" class="btn btn-warning btn-sm">{{totalcart}}</button>								
+                  <a class="nav-link"  style="margin-top: 0.7em;font-size: 25px;color: #00783e;font-family: Arial;" routerLink="cart"><i class="fa fa-opencart">Cart</i><button  style="margin-left: 8px;" class="btn btn-warning btn-sm">0</button>								
                   </a>
                 </li>
 
-                <li *ngIf="!(isLoggedIn | async)"  class="nav-item active" style="border-right: 1px solid #e5e5e5;margin-top: -.5em;border-right: 1px solid #e5e5e5;
+                <li  class="nav-item active" style="border-right: 1px solid #e5e5e5;margin-top: -.5em;border-right: 1px solid #e5e5e5;
                 width: 15em;height: 5em;text-align: center;">
                     <a  class="nav-link" routerLink="login" style="margin-top: 0.7em;font-size: 25px;color: #00783e;font-family: Arial;" href="#"><i class="fa fa-lock">Login</i></a>
 
